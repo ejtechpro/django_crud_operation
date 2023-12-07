@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  CRUD || VIEW
+{% endblock title %}
+  
+
+{% block content %}
+<div class="content">
+  <h4>DJANGO IMPLEMENTATION OF CRUD OPERATIONS</h4>
+  <a href="{% url '' %}">
+  <button class="btn btn-primary">View Students</button>
+</a>
+<form action="" method="POST" autocomplete="off">
+  {% csrf_token %}
+  <label for="course">Course</label>
+  {{form.course}}
+  <div>
+    <span>
+    <label for="course">First Name</label>
+    {{form.first_name}}
+  </span>
+  <span>
+    <label for="course">Last Name</label>
+    {{form.last_name}}
+  </span>
+  </div>
+  <label for="course">Phone Number</label>
+  {{form.phone}}
+  <fieldset>
+  <legend for="course">Gender</legend>
+  {{form.gender}}
+</fieldset>
+  <label for="course">Remarks</label>
+  {{form.remarks}}
+  <button class="submit--btn" type="submit">Submit</button>
+</form>
+
+</div>
+{% endblock content %}
+  

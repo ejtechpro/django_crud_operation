@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #e6e6fa;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  font-family: 'poppins', sans-serif;
+}
+.content{
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+  margin-top: 5rem;
+}
+.content h4{
+  color: #777;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.content h4::after{
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  right: 0;
+  background: #ccc;
+  height: 2px;
+}
+.content a{
+  float: right;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.content a button{
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 1px;
+ background: #708090;
+ cursor: pointer;
+ color: #fff;
+}
+.content table{
+width: 100%;
+margin-top: 1rem;
+border: 1px solid #777;
+}
+
+.content table th{
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #777;
+}
+.content table tr{
+  border: 1px solid #777;
+}
+.content table td{
+  margin-top: 1rem;
+  background: rgb(000, 000, 000, 0.06);
+}
+.content form{
+  clear: both;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.content form div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content form div span{
+  display: flex;
+  flex-direction: column;
+}
+.content form  label{
+  color: #777;
+  font-weight: 500;
+}
+.content form  input,
+.content form  select,
+.content form  textarea,
+.content form  fieldset{
+  padding: 6px;
+  outline: none;
+  border: 1px solid #777;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.content form  select option:nth-child(1){
+  display: none;
+}
+
+.content .submit--btn{
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 1px;
+  background: #4682b4;
+  cursor: pointer;
+  color: #fff;
+  display: grid;
+}
